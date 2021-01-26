@@ -3,6 +3,8 @@
 
 
 # Prerequisites:
-```python3 pip install discord.py
+```
+python3 pip install discord.py
 or
-pip install discord.py```
+pip install discord.py
+```
