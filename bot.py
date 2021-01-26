@@ -18,12 +18,17 @@ async def ping(ctx):
     await ctx.send(codeblock(f"Pong! {round(client.latency * 1000)}ms"))
 
 @client.command()
-async def ls(ctx):
+async def ls(ctx, path="./"):
     output = ""
-    for file in os.listdir("./"):
+    for file in os.listdir(path):
         output += f"{file}\n"
         
     await ctx.send(codeblock(output))
 
+@client.command()
+async def cat(ctx, path):
+    contents = open(path)
+    await ctx.send(codeblock(contents.read()))
 
-client.run("ODAzNDQwODc3NDAxNjY5NjYz.YA90oA.5o9n4nsoUK8lY01AeAHdqLTcuvw")
+
+client.run("BOT_TOKEN_HERE")
