@@ -26,4 +26,4 @@ async def ls(ctx):
     await ctx.send(codeblock(output))
 
 
-client.run("ODAzNDQwODc3NDAxNjY5NjYz.YA90oA.5o9n4nsoUK8lY01AeAHdqLTcuvw")
+client.run("BOT_TOKEN_HERE")
